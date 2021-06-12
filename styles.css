@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo', sans-serif;
+}
+
+body{
+  height: 100vh; width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.content{
+  height: 80%; width: 50%;
+}
+
+.content .form-content{
+  height: 75%; width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.content .text-container{
+  height: 20%;
+  width: 100%;
+}
+
+.content .form-content, .content .text-container{
+  /* border-radius: 15px; */
+  background-color: rgb(216, 216, 216);
+  margin: 15px;
+}
+
+.form-content .form-group{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.form-group .control-group{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 4px;
+}
+
+.control-group input{
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+}
+
+.control-group textarea{
+  height: 50px;
+  border-radius: 15px;
+  text-align: center;
+  outline: none;
+  resize: none;
+  vertical-align:middle;
+  line-height: 50px;
+}
+
+.control-group input[type=submit], .text-container input[type=submit]{
+  background-color: #270041dc;
+  color: #fff;
+  height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.control-group input[type=submit]:hover,
+.text-content input[type=submit]:hover{
+  background-color:  #27004185;
+}
+
+.form-group .control-group div{
+  border-radius: 15px;
+  height: 30px;
+  overflow: hidden;
+}
+.control-group input[type=color]{
+  border: 0;
+  padding: 0;
+  height: 200%;
+  width: 200%;
+  transform: translate(-25%, -25%);
+  cursor: pointer;
+}
+
+.content .text-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-content form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-container input[type=submit]{
+  border: none;
+  height: 40px;
+  width: 20%;
+  border-radius: 15px;
+}
+
+@keyframes animation {
+  0%{ opacity: 0;}
+  25%{opacity: 0;}
+  50%{opacity: 0;}
+  75%{opacity: 0;}
+  100%{opacity: 100%;}
+}
