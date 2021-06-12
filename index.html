@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <title>Document</title>
+</head>
+<body>
+    <div class="content">
+      <div class="content  form-content">
+        <form class="form-group">
+
+          <div class="control-group">
+            <label>Cor Primaria</label>
+            <div>
+              <input type="color" id="color1" value="#fff">
+            </div>
+     </div>
+
+          <div class="control-group">
+            <label>Cor Secundaria</label>
+            <div>
+              <input type="color" id="color2" value="#fff">
+            </div>
+     </div>
+
+     <div class="control-group">
+       <label>Graus</label>
+       <input type="number" min="0" max="360" id="graus">
+     </div>
+     
+     <div class="control-group">
+         <label for="">Texto</label>
+        <textarea id="text" ></textarea>
+     </div>
+     
+     <div class="control-group">  
+       <label>Cor da Fonte</label>
+      <div>
+        <input type="color" id="font-color" value="#fff">
+      </div>
+     </div>
+     
+     <div class="control-group">
+        <label>Tamanho da Fonte</label>
+        <input type="number" id="font-size" min="24" max=45>
+  </div>
+
+  <div class="control-group">
+      <input type="submit" value="Adicionar" id="added">
+  </div>
+  
+</form>
+</div>
+
+<div class="container-content text-container">
+<form >
+  <span id="text" class="text-control"></span>
+  <input  class="text-control" type="submit" value="Resetar" id="reset">
+</form>
+</div>
+</div>
+
+ 
+ <script src="script.js"></script>
+</body>
+</html>
