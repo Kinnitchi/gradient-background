@@ -1,66 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="styles.css">
- <title>Document</title>
+ <title>Gradient Background</title>
 </head>
 <body>
-    <div class="content">
-      <div class="content  form-content">
+  <div class="container">
+    <div class="container-content form-container">
         <form class="form-group">
 
-          <div class="control-group">
-            <label>Cor Primaria</label>
-            <div>
-              <input type="color" id="color1" value="#fff">
+                <div class="control-group">
+                    <label>Cor Primaria</label>
+                 <div>
+                    <input type="color" id="color1" value="#ffffff">
+                 </div>
+                </div>
+
+               <div class="control-group">
+                <label>Cor Secundaria</label>
+               <div>
+                <input type="color" id="color2" value="#ffffff">
+               </div>
+               </div>
+
+               <div class="control-group">
+                <label>Graus</label>
+                <input type="number" min="0" max="360" id="graus" placeholder="0° a 360° graus">
             </div>
-     </div>
 
-          <div class="control-group">
-            <label>Cor Secundaria</label>
-            <div>
-              <input type="color" id="color2" value="#fff">
+            <div class="control-group">
+                <label>Texto</label>
+                <textarea maxlength="20" id="texto"></textarea>
             </div>
-     </div>
 
-     <div class="control-group">
-       <label>Graus</label>
-       <input type="number" min="0" max="360" id="graus">
-     </div>
-     
-     <div class="control-group">
-         <label for="">Texto</label>
-        <textarea id="text" ></textarea>
-     </div>
-     
-     <div class="control-group">  
-       <label>Cor da Fonte</label>
-      <div>
-        <input type="color" id="font-color" value="#fff">
-      </div>
-     </div>
-     
-     <div class="control-group">
-        <label>Tamanho da Fonte</label>
-        <input type="number" id="font-size" min="24" max=45>
-  </div>
+            <div class="control-group">
+                <label>Cor da fonte</label>
+                <div>
+                    <input type="color" id="font-color" value="#ffffff">
+                </div>
+            </div>
 
-  <div class="control-group">
-      <input type="submit" value="Adicionar" id="added">
-  </div>
-  
-</form>
-</div>
+            <div class="control-group">
+                <label>Tamanho da Fonte</label>
+                <input type="number" id="font-size" min="24" max=45>
+            </div>
 
-<div class="content text-container">
-<form >
-  <span id="text" class="text-control"></span>
-  <input  class="text-control" type="submit" value="Resetar" id="reset">
-</form>
-</div>
+            <div class="control-group">
+                <input type="submit" value="Adicionar" id="added">
+            </div>
+            
+        </form>
+    </div>
+
+    <div class="container-content text-container">
+        <form >
+            <span id="text" class="text-control"></span>
+            <input  class="text-control" type="submit" value="Resetar" id="reset">
+        </form>
+    </div>
 </div>
 
  

@@ -7,35 +7,40 @@
 }
 
 body{
-  height: 100vh; width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container{
+  height: 100%;
+  width: 22%;
+
+}
+
+.container .form-container{
+  height: 75%;
+  width: 100%;
+  display: flex;
   justify-content: center;
-}
-
-.content{
-  height: 80%; width: 50%;
-}
-
-.content .form-content{
-  height: 75%; width: 100%;
-  display: flex;
-  justify-content: start;
   align-items: center;
 }
 
-.content .text-container{
+.container .text-container{
   height: 20%;
   width: 100%;
 }
 
-.content .form-content, .content .text-container{
-  /* border-radius: 15px; */
-  background-color: rgb(216, 216, 216);
+.container .form-container, .container .text-container{
+  border-radius: 15px;
+  background-color: #e2f6e0;
   margin: 15px;
 }
 
-.form-content .form-group{
+.form-container .form-group{
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -61,7 +66,9 @@ body{
   outline: none;
   border-radius: 15px;
 }
-
+label {
+  color: black;
+}
 .control-group textarea{
   height: 50px;
   border-radius: 15px;
@@ -73,7 +80,7 @@ body{
 }
 
 .control-group input[type=submit], .text-container input[type=submit]{
-  background-color: #270041dc;
+  background-color: #000000dc;
   color: #fff;
   height: 40px;
   font-weight: bold;
@@ -83,8 +90,8 @@ body{
 }
 
 .control-group input[type=submit]:hover,
-.text-content input[type=submit]:hover{
-  background-color:  #27004185;
+.text-container input[type=submit]:hover{
+  background-color: #21554e;
 }
 
 .form-group .control-group div{
@@ -101,12 +108,12 @@ body{
   cursor: pointer;
 }
 
-.content .text-content{
+.container .text-container{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.text-content form{
+.text-container form{
   width: 100%;
   height: 100%;
   display: flex;
